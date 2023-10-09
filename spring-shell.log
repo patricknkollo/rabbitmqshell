@@ -19,3 +19,10 @@
 1695863313719:mqtool push -db -i 1 -q queueA
 1695863465913:mqtool db push -i 1 -q queueA
 1695864196527:mqtool db push -a -q queueA
+1695889199140:mqtool create -q queueB
+1695889267918:mqtool push -m hello team -q queueB
+1695889366604:mqtool move-message -s queueB -t queueA
+1695889431935:mqtool -ls
+1695889493107:mqtool consume -q queueA
+1695889662445:mqtool db push -i 3 -q queueB
+1695889715411:mqtool db push -a -q queueA

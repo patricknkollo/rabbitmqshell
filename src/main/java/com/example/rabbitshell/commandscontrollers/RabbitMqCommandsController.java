@@ -43,8 +43,6 @@ public class RabbitMqCommandsController {
          rabbitsMQService.consumeFromParticularQueue(srcQueue);
     }
 
-
-
     //TODO
     @ShellMethod(key = "mqtool move", value = "me message")
     public String moveMessageWithRegexFromOneQueueToAnother(@ShellOption(value = "-s") String srcQueue, @ShellOption(value = "-t")

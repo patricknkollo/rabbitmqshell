@@ -26,6 +26,7 @@ public class FromDBToRabbitController {
         return service.publishAllMessageOnQueue(queueName);
     }
 
+    //TODO
     @ShellMethod(key = "mqtool delete -a", value = "me message")
     public String deleteAllMessagesOnQueue( @ShellOption(value = "-q") String queueName){
         return service.publishAllMessageOnQueue(queueName);
